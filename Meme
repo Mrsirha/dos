@@ -1,0 +1,29 @@
+
+#! /bin/bash
+y=1
+x=1
+python -mwebbrowser http://Hackaday.com
+while [ $x = 1 ]; do
+	echo Esablishing Connection...
+	sleep 2
+	echo Pinging Host FTB Trasfer...
+	while (($y < 6)); do
+		ping -c 2 10.0.0.10
+		echo Ping Successful
+		sleep 2
+		echo Restarting...
+		sleep 1
+		echo Restarting...
+		echo Restarted FTP "Hackaday" Repo!
+		y=y+1
+	done
+	echo Sending...
+	sleep 1
+	echo Done
+	echo Reciveing...
+	sleep 2
+	echo Done
+	echo Integration Process complete!
+	sleep 1
+	y=0
+done

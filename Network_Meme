@@ -1,0 +1,5 @@
+#! /bin/bash
+
+IP_User=ipconfig en0
+
+echo $IP_User
